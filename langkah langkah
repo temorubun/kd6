@@ -20,12 +20,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [(none)]> use kampus;
 
-MariaDB [kampus]> UPDATE mahasiswa 
-    -> SET nama = 'Agung Hendi Temorubun', 
-    ->     nim = '22512001', 
-    ->     jurusan = 'Teknologi Rekayasa Internet', 
-    ->     email = 'agunghenditemorubun@gmail.com' 
-    -> WHERE id = 1;
+MariaDB [kampus]> UPDATE mahasiswa SET nama = 'Agung Hendi Temorubun',nim = '22512001', jurusan = 'Teknologi Rekayasa Internet', email = 'agunghenditemorubun@gmail.com' WHERE id = 1;
 Query OK, 1 row affected (0.004 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
