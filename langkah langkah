@@ -3,7 +3,10 @@ python3 -m http.server 8080
 di kali linux
 
 cmd
+del agung.php
+del index.php
 curl -O http://172.16.133.201:8080/agung.php
+curl -O http://172.16.133.201:8080/index.php
 
 http://172.16.133.235/biodata/agung.php
 
