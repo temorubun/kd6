@@ -31,8 +31,13 @@ Rows matched: 1  Changed: 1  Warnings: 0
 
 MariaDB [kampus]> 
 
-SELECT User, Host FROM mysql.user;
+melihat username
+SELECT User FROM mysql.user;
 
+melihat user mysql dan password
+SELECT User, Host, authentication_string FROM mysql.user;
+
+merubah password phpmyadmin, passwornya agung, usernya root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'agung';
 FLUSH PRIVILEGES;
 EXIT;
